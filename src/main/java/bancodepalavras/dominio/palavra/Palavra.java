@@ -27,7 +27,7 @@ public class Palavra extends ObjetoDominioImpl {
         return new Palavra(id, palavra, tema);
     }
 
-    public Palavra reconstituir(long id, String palavra, Tema tema){
+    public static Palavra reconstituir(long id, String palavra, Tema tema){
         return new Palavra(id, palavra, tema);
     }
 

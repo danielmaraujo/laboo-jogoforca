@@ -85,7 +85,7 @@ public class Item extends ObjetoDominioImpl {
     }
 
     public void exibir(Object contexto){
-        palavra.exibir(contexto);
+        palavra.exibir(contexto, posicoesDescobertas);
     }
 
     boolean tentar(char codigo){
@@ -106,7 +106,7 @@ public class Item extends ObjetoDominioImpl {
     }
 
     public boolean arriscou(){
-        return !palavraArriscada.equals(null);
+        return palavraArriscada != null;
     }
 
     public boolean acertou(){
